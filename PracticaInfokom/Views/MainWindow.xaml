@@ -19,9 +19,9 @@
             <StackPanel Grid.Row="0" Orientation="Horizontal">
                 <TextBlock Text="Заказы" FontSize="12" Margin="2,5"/>
                 <Button Content="Обновить" FontSize="12" Command="{Binding UpdateButton}"/>
-                <xctk:DateTimePicker MinWidth="135" FontSize="7.5"/>
+                <xctk:DateTimePicker MinWidth="135" FontSize="7.5" Text="{Binding DateBegin}" x:Name="DateBegin"/>
                 <TextBlock Text="-" FontSize="20" Margin="1,0"/>
-                <xctk:DateTimePicker MinWidth="135" FontSize="7.5"/>
+                <xctk:DateTimePicker MinWidth="135" FontSize="7.5" Text="{Binding DateEnd}" x:Name="DateEnd"/>
                 <TextBlock Text="Получаемые краты/слябы" FontSize="12" Margin="15,5"/>
             </StackPanel>
         </Viewbox>
